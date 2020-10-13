@@ -25,7 +25,7 @@ Each line in the file represents one country. This format can be used for an imp
 1. Click on 'Import' button
 
 ## Remarks
-- Right now, this only works with with German country names, as the web scraping has been programmed to work with the link https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde, which contains a list of all country names in German. Since the site with English country names has a different build-up, the scraping of this site does not work yet.
+- Right now, this only works with German country names, as the web scraping has been programmed to work with the link https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde, which contains a list of all country names in German. Since the site with English country names has a different build-up, the scraping of this site does not work yet.
 - (*) Regarding point 2 of the Step-by-Step-instructions: In the file download_images.py, there is the function download_and_save_image(). To correctly save the images on your local computer so that Anki can use them, you need to substitute the part of the file path in line 42 that comes before the expression that is marked by a ~: 
 `file = open(f'C:\\~\\collection.media\\{img_name}.png', 'wb')`
 Anki saves its images in the collection.media folder which you can find in the %APPDATA% folder. For more information on this, I refer you to the [Anki documentation](https://docs.ankiweb.net/#/files).
