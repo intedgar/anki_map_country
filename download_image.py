@@ -76,7 +76,7 @@ def get_map_page_url(anchor):
 def download_and_save_image(image_url, img_name):
     response = requests.get(f"{image_url}", stream=True)
 
-    file = open(f'C:\\Users\\Eddie\\AppData\\Roaming\\Anki2\\Benutzer 1\\collection.media\\{img_name}.png', 'wb')
+    file = open(f'C:\\~\\collection.media\\{img_name}.png', 'wb') #fill in your own user path here
     #file = open(f'C:\\Users\\Eddie\\Desktop\\Test\\{img_name}.png', 'wb')
 
     file.write(response.content)
