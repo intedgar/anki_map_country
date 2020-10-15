@@ -7,6 +7,7 @@
 <html><img src="map_Botswana.png"></html>; Botswana
 <html><img src="map_Burkina Faso.png"></html>; Burkina Faso
 <html><img src="map_Burundi.png"></html>; Burundi
+<html><img src="map_Côte d'Ivoire.png"></html>; Côte d'Ivoire
 <html><img src="map_Dschibuti.png"></html>; Dschibuti
 <html><img src="map_Eritrea.png"></html>; Eritrea
 <html><img src="map_Gabun.png"></html>; Gabun
@@ -19,6 +20,7 @@
 <html><img src="map_Kap Verde.png"></html>; Kap Verde
 <html><img src="map_Kenia.png"></html>; Kenia
 <html><img src="map_Komoren.png"></html>; Komoren
+<html><img src="map_Demokratische Republik Kongo.png"></html>; Demokratische Republik Kongo
 <html><img src="map_Republik Kongo.png"></html>; Republik Kongo
 <html><img src="map_Lesotho.png"></html>; Lesotho
 <html><img src="map_Liberia.png"></html>; Liberia
@@ -124,6 +126,7 @@
 <html><img src="map_Liechtenstein.png"></html>; Liechtenstein
 <html><img src="map_Litauen.png"></html>; Litauen
 <html><img src="map_Luxemburg.png"></html>; Luxemburg
+<html><img src="map_Mazedonien.png"></html>; Mazedonien
 <html><img src="map_Malta.png"></html>; Malta
 <html><img src="map_Moldawien.png"></html>; Moldawien
 <html><img src="map_Monaco.png"></html>; Monaco

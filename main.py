@@ -63,12 +63,12 @@ for continent in continent_rows:
         html_soup = download_image.parse_page(url)
         anchor_tag = download_image.get_map_page_anchor(html_soup, continent_name)
         #print('url', url)
-        
+
         if anchor_tag == None:
             parse_url = download_image.get_alternative_url(html_soup)
             #print('parse_url: ', parse_url)
             html_soup = download_image.parse_page(parse_url)
-            image = download_image.get_map_page_anchor(html_soup, continent_name)
+            anchor_tag = download_image.get_map_page_anchor(html_soup, continent_name)
             #print('url', url)
 
         if anchor_tag == None:
