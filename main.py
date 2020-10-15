@@ -61,14 +61,22 @@ for continent in continent_rows:
 
         #download and save image from the website
         html_soup = download_image.parse_page(url)
-        anchor_tag = download_image.get_map_page_anchor(html_soup, continent_name)
+
+        #extract the english country name from html_soup
+        country_name_pattern = re.compile('SVG locator maps of (.+) [(]location')
+        #country_name_pattern = re.compile('SVG locator maps of ([a-zA-Zô-]+[\s]*[a-zA-Z\']*) [(]location')
+        description = html_soup.select('#firstHeading')[0].string
+        print('description', description)
+        country_name = country_name_pattern.search(description).group(1)
+        print('country_name', country_name)
+        anchor_tag = download_image.get_map_page_anchor(html_soup, country_name, continent_name)
         #print('url', url)
 
         if anchor_tag == None:
             parse_url = download_image.get_alternative_url(html_soup)
             #print('parse_url: ', parse_url)
             html_soup = download_image.parse_page(parse_url)
-            anchor_tag = download_image.get_map_page_anchor(html_soup, continent_name)
+            anchor_tag = download_image.get_map_page_anchor(html_soup, country_name, continent_name)
             #print('url', url)
 
         if anchor_tag == None:
