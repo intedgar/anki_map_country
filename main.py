@@ -4,7 +4,7 @@ import download_image
 import re
 
 #send a request to wikipedia website with a list of all states
-response = requests.get('https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_of_Albania_(location_map_scheme)?uselang=de')
+response = requests.get('https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_of_the_European_Union_(location_map_scheme)?uselang=de')
 text = response.text
 soup = BeautifulSoup(text, "lxml")
 #print(soup.prettify())
